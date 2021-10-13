@@ -4,11 +4,6 @@
 		float: left;
 		margin-right: 100px;
 	}
-	.possibilities__title {
-		color: black;
-		text-align: left;
-		font-size: 36px;
-	}
 	.possibilities__title_text {
 		max-width: 500px;
 		margin-top: 10px;
@@ -35,7 +30,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 500px;
-	margin: 5 auto;
 	.possibilities__item {
 		flex: 1 1 calc(33.33% - 30px);
 		margin: 20px;

@@ -100,59 +100,32 @@ a {
   justify-content: flex-end;
   flex-wrap: nowrap; }
 
-@keyframes anim1 {
-  0% {
-    /*...*/ }
-  50% {
-    /*...*/ }
-  100% {
-    /*...*/ } }
-@keyframes anim2 {
-  0% {
-    /*...*/ }
-  50% {
-    /*...*/ }
-  100% {
-    /*...*/ } }
-@keyframes anim3 {
-  0% {
-    /*...*/ }
-  50% {
-    /*...*/ }
-  100% {
-    /*...*/ } }
-header .header-content {
+.product__row {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  margin-top: 20px;
-  max-width: 1250px; }
-header nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex; }
-header nav a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 20px; }
-  header nav a:hover {
-    transition: .4s;
-    background: var(--main-site-color);
-    color: white;
-    width: 100%; }
+  justify-content: space-between;
+  flex-wrap: nowrap; }
+
+.title-text, .title, .possibilities__title {
+  color: #585858;
+  font-size: 20px; }
+
+.band, .red_band {
+  border-bottom: 2px solid #f00;
+  width: 100px; }
+
+.square, .block {
+  width: 290px;
+  height: 290px;
+  background: #f5f0dd;
+  margin: 10px;
+  display: flex;
+  flex-wrap: nowrap; }
 
 .About_us {
   padding: 100px 0; }
   .About_us .About_us_title {
     float: left;
     margin-right: 100px; }
-  .About_us .possibilities__title {
-    color: black;
-    text-align: left;
-    font-size: 36px; }
   .About_us .possibilities__title_text {
     max-width: 500px;
     margin-top: 10px; }
@@ -175,8 +148,7 @@ header nav a {
 .possibilities {
   display: flex;
   flex-wrap: wrap;
-  max-width: 500px;
-  margin: 5 auto; }
+  max-width: 500px; }
   .possibilities .possibilities__item {
     flex: 1 1 calc(33.33% - 30px);
     margin: 20px;
@@ -200,6 +172,49 @@ header nav a {
     padding-right: 0;
     padding-bottom: 20px; }
   .About_us .possibilities__item .possibilities__text {
+    width: 100%;
+    text-align: center; } }
+header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin-top: 20px;
+  max-width: 1250px; }
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; }
+header nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px; }
+  header nav a:hover {
+    transition: .4s;
+    background: var(--main-site-color);
+    color: white;
+    width: 100%; }
+
+@media (max-width: 1250px) {
+  header {
+    display: none; }
+
+  .banner .banner__list .banner__item {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0; }
+
+  .banner .banner__list .banner__item-wrapper {
+    flex-direction: column;
+    align-items: center; }
+
+  .banner .banner__item .banner__avatar {
+    padding-right: 0;
+    padding-bottom: 20px; }
+
+  .banner .banner__item .banner__text {
     width: 100%;
     text-align: center; } }
 .banner {
@@ -243,14 +258,228 @@ header nav a {
     width: 100%;
     padding-right: 0;
     padding-left: 0; }
+
   .banner .banner__list .banner__item-wrapper {
     flex-direction: column;
     align-items: center; }
+
   .banner .banner__item .banner__avatar {
     padding-right: 0;
     padding-bottom: 20px; }
+
   .banner .banner__item .banner__text {
     width: 100%;
     text-align: center; } }
+.Products .heading {
+  display: block;
+  text-align: center;
+  width: 100%; }
+  .Products .heading p {
+    max-width: 515px;
+    margin-top: 25px;
+    margin-left: 360px; }
+.Products .red_band {
+  margin-left: 575px;
+  padding-top: 25px; }
+.Products .product_nav ul {
+  margin-left: 250px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between; }
+.Products .product_nav nav a {
+  color: #585858;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 15px 60px 15px 0;
+  font-weight: 600; }
+  .Products .product_nav nav a:hover {
+    transition: 0.4s;
+    color: red;
+    width: 100%; }
+.Products .Product_Blocks {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1250px;
+  justify-content: center; }
+
+.Our_Team .Team__Heading {
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin-top: 70px; }
+  .Our_Team .Team__Heading p {
+    max-width: 455px;
+    padding-top: 25px;
+    padding-bottom: 25px; }
+.Our_Team .left_photo {
+  width: 325px;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  float: left; }
+.Our_Team .right_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 50px; }
+.Our_Team .right_wrapper_heading {
+  margin-left: 70px; }
+.Our_Team .Team_title_text {
+  margin: 25px 0 25px 0; }
+.Our_Team .social_nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start; }
+
+.social_nav nav a {
+  color: #585858;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 15px 40px 15px 0;
+  font-style: italic; }
+  .social_nav nav a:hover {
+    transition: 0.4s;
+    color: red;
+    width: 100%; }
+
+.card_photo {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1250px;
+  justify-content: center; }
+  .card_photo .block {
+    width: 175px;
+    height: 200px;
+    background: #f5f0dd;
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap; }
+    .card_photo .block:hover {
+      transition: 0.4s;
+      background-color: black;
+      color: white; }
+  .card_photo .text__wrapper {
+    margin-left: 50px;
+    padding-top: 170px; }
+
+.Mailing {
+  margin-top: 100px;
+  padding: 140px;
+  background-color: #f5f0dd; }
+
+.container {
+  display: flex;
+  justify-content: center; }
+
+.mailing_heading {
+  margin-left: 80px; }
+  .mailing_heading .title h1 {
+    color: white;
+    letter-spacing: 2px; }
+  .mailing_heading .title_text {
+    max-width: 455px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 320px;
+    color: white; }
+
+.mailing_menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px; }
+  .mailing_menu .mail_input input {
+    width: 440px;
+    height: 80px;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-left: 140px; }
+  .mailing_menu .mail_container_button {
+    width: 440px;
+    height: 80px;
+    margin-left: 20px;
+    padding: 25px;
+    background: #f70f22;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    max-width: 225px;
+    text-align: center;
+    letter-spacing: 2px; }
+    .mailing_menu .mail_container_button a {
+      color: white;
+      font-size: var(--font-size-lg);
+      text-decoration: none; }
+
+.Get_in_touch {
+  margin-top: 80px;
+  display: flex;
+  margin-bottom: 70px; }
+  .Get_in_touch .Get_title_text {
+    max-width: 700px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .Get_in_touch .form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px; }
+    .Get_in_touch .form input {
+      width: 440px;
+      height: 80px;
+      border-radius: 5px;
+      border-color: transparent;
+      background-color: #e5e5e5;
+      padding-left: 45px;
+      margin-right: 55px; }
+    .Get_in_touch .form .form_message input {
+      margin-top: 65px;
+      width: 930px;
+      height: 250px;
+      padding-bottom: 150px; }
+  .Get_in_touch .get_container_button {
+    width: 930px;
+    height: 80px;
+    margin-top: 45px;
+    padding: 30px;
+    background: #f70f22;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px; }
+    .Get_in_touch .get_container_button a {
+      color: white;
+      font-size: var(--font-size-lg);
+      text-decoration: none; }
+  .Get_in_touch .card {
+    width: 200px;
+    height: 490px;
+    background-color: #2d2d2d; }
+
+footer {
+  background-color: #313030;
+  margin: 0 auto; }
+
+.Footer .social_dots {
+  margin: 50px 165px 25px 0; }
+  .Footer .social_dots ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+  .Footer .social_dots a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 25px; }
+    .Footer .social_dots a:hover {
+      transition: 0.4s;
+      color: red;
+      width: 100%; }
+.Footer .coopyright {
+  color: white;
+  margin: 50px 50px 25px 150px; }
 
 /*# sourceMappingURL=style.css.map */

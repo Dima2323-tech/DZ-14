@@ -23,3 +23,8 @@ a {
     justify-content: flex-end;
     flex-wrap: nowrap;
 }
+.product__row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
